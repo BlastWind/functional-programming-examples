@@ -110,3 +110,7 @@ const map = curry((f, arr) => arr.map(f));
 const allSubtractOne = map(subtractOne);
 const nums = [1, 2, 3];
 console.log(allSubtractOne(nums)); // [0, 1, 2] ! Ain't that cool?
+
+// checkout how complicated it is to work with a uncurried version of map
+// we need to write out elements twice, why bother?
+const uncurriedAllSubtractOne = (elements) => elements.map(subtractOne);
